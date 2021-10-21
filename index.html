@@ -132,7 +132,7 @@
                   <h6 class="title">MODICOIN SALE IS OPEN</h6>
                   <div>
                     <center>
-                      <button class="btn-secondary-box" onclick="connectMetamask()">
+                      <button id="connectMeta" class="btn-secondary-box" onclick="connectMetamask()">
                         Connect Metamask
                       </button>
                     </center>
@@ -1471,7 +1471,9 @@
 				alert("metamask is not installed!")
 			}
 			account = await ethereum.request({ method: 'eth_requestAccounts' });
+      document.getElementById("connectMeta").innerHTML="Connected";
 			console.log(account);
+      
 		}
            
     async function purchaseModitoken(){
