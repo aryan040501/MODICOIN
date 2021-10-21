@@ -16,7 +16,7 @@
     <meta name="author" content="tempload" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <link rel="icon" type="image/png" href="assets/images/logos/modicoin.png" />
 
     <!-- Bootstrap & Plugins CSS -->
     <link
@@ -52,7 +52,8 @@
           <div class="col-12 position-relative">
             <nav class="main-nav">
               <!-- ***** Logo Start ***** -->
-              <a href="index.html" class="logo">
+              <a href="index.html" class="logo" style="display: grid; grid-template-columns: 40% 40%;">
+                <img src="assets/images/logos/modicoin.png" width="50px" style="margin-top: -10px; padding-left: 15px;"/>
                 <p style="color: white">MODICOIN</p>
                 MODICOIN
               </a>
@@ -94,10 +95,10 @@
               <ul class="nav">
                 <li><a href="#what-is-ico">WHAT IS MODICOIN</a></li>
                 <!-- <li><a href="#token-sale">TOKEN SALE</a></li> -->
+                <li><a href="#faq">HOW TO GET?</a></li>
                 <li><a href="#roadmap">ROADMAP</a></li>
                 <!-- <li><a href="#apps">APPS</a></li> -->
-                <li><a href="#team">TEAM</a></li>
-                <!-- <li><a href="#faq">FAQ</a></li> -->
+                <li><a href="#team">TEAM</a></li>                
                 <li><a href="#contact">CONTACT</a></li>
                 <!-- <li><a href="#" class="btn-nav-box">SIGN UP</a></li> -->
               </ul>
@@ -129,7 +130,7 @@
             <div class="col-lg-6 col-md-12 col-sm-12 col-12 align-self-center">
               <div class="box">
                 <div class="token">
-                  <h6 class="title">MODICOIN SALE IS OPEN</h6>
+                  <h6 class="title">Get MODICOIN for Free!</h6>
                   <div>
                     <center>
                       <button id="connectMeta" class="btn-secondary-box" onclick="connectMetamask()">
@@ -165,13 +166,13 @@
                     <input type="text" placeholder="0" data-step="100" id="input_modi"/>
                     <i class="fa fa-plus"></i>
                     <i class="fa fa-minus"></i>
-                    <button onclick="purchaseModitoken()">PURCHASE TOKEN NOW</button>
+                    <button onclick="purchaseModitoken()">PURCHASE TOKEN NOW</button>                    
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </div>        
       </div>
       <div class="scroll-to">
         <a href="#what-is-ico">
@@ -180,6 +181,97 @@
       </div>
     </section>
     <!-- ***** Wellcome Area End ***** -->
+
+    <section class="section bg-top" id="faq">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="center-heading">
+              <h1 class="section-title">HOW TO GET MODICOIN?</h1>
+            </div>
+          </div>
+          <div class="offset-lg-3 col-lg-6">
+            <div class="center-text">
+              <p>
+                In Short, just install Metamask Wallet by just googling "Download Metamask". Metamask is an extension based secure wallet.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-1">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse-1"
+                    aria-expanded="false"
+                    aria-controls="collapse-1"
+                  >
+                    <span class="badge">1</span> What are the benefits of
+                    MODICOIN?
+                  </button>
+                </h2>
+                <div
+                  id="collapse-1"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="heading-1"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Currently it is just for fun and why not take some free coins, who knows it becomes something big in the future.
+                    </p>                    
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-2">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse-2"
+                    aria-expanded="false"
+                    aria-controls="collapse-2"
+                  >
+                    <span class="badge">2</span> Added MODICOIN but not visible?
+                  </button>
+                </h2>
+                <div
+                  id="collapse-2"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="heading-2"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Follow the steps:
+                      <br><br>
+                      1.) Goto Metamask<br>
+                      2.) Click on assets<br>
+                      3.) If still not visible, continue<br>
+                      4.) Click on "Import Tokens"<br>
+                      5.) On Token Address paste "0x1f031D012667d46cebc54bbE512E17b0126Fdc52"<br>
+                      6.) On Token symbol type "MDI"<br>
+                      7.) Rest data will be filled automatically<br>
+                      8.) Click on Add Custom Token and then Continue. It will be visible now.<br>
+                    </p>                    
+                  </div>
+                </div>
+              </div>          
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
 
     <!-- ***** What is ICO Start ***** -->
     <section class="section bg-bottom" id="what-is-ico">
@@ -755,311 +847,6 @@
     <!-- ***** Telegram Parallax End ***** -->
 
     <!-- ***** FAQ Start ***** -->
-    <!-- <section class="section bg-top" id="faq">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="center-heading">
-              <h1 class="section-title">FAQ</h1>
-            </div>
-          </div>
-          <div class="offset-lg-3 col-lg-6">
-            <div class="center-text">
-              <p>
-                Fusce placerat pretium mauris, vel sollicitudin elit lacinia
-                vitae. Quisque sit amet nisi erat.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="accordion" id="accordionExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="heading-1">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapse-1"
-                    aria-expanded="false"
-                    aria-controls="collapse-1"
-                  >
-                    <span class="badge">1</span> What are the benefits of
-                    digital currency?
-                  </button>
-                </h2>
-                <div
-                  id="collapse-1"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="heading-1"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <p>
-                      Donec tempus sodales dolor, at efficitur enim posuere
-                      auctor. Nam et nisi eu purus tempor faucibus aliquet vitae
-                      orci. Curabitur sollicitudin leo et magna pharetra
-                      efficitur. Nullam et scelerisque lectus. Orci varius
-                      natoque penatibus et magnis dis parturient montes,
-                      nascetur ridiculus mus. Quisque faucibus sit amet odio
-                      eget scelerisque. Mauris dictum cursus ornare.
-                    </p>
-                    <p>
-                      Ut vehicula blandit tellus. Sed sit amet bibendum leo, non
-                      sagittis neque. Nam fringilla fermentum tortor, ac gravida
-                      velit facilisis id. Donec congue ullamcorper velit, at
-                      malesuada arcu faucibus pretium. Donec rhoncus magna sit
-                      amet massa venenatis, ut convallis justo ultricies.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="heading-2">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapse-2"
-                    aria-expanded="false"
-                    aria-controls="collapse-2"
-                  >
-                    <span class="badge">2</span> How long has digital currency
-                    existed?
-                  </button>
-                </h2>
-                <div
-                  id="collapse-2"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="heading-2"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <p>
-                      Donec tempus sodales dolor, at efficitur enim posuere
-                      auctor. Nam et nisi eu purus tempor faucibus aliquet vitae
-                      orci. Curabitur sollicitudin leo et magna pharetra
-                      efficitur. Nullam et scelerisque lectus. Orci varius
-                      natoque penatibus et magnis dis parturient montes,
-                      nascetur ridiculus mus. Quisque faucibus sit amet odio
-                      eget scelerisque. Mauris dictum cursus ornare.
-                    </p>
-                    <p>
-                      Ut vehicula blandit tellus. Sed sit amet bibendum leo, non
-                      sagittis neque. Nam fringilla fermentum tortor, ac gravida
-                      velit facilisis id. Donec congue ullamcorper velit, at
-                      malesuada arcu faucibus pretium. Donec rhoncus magna sit
-                      amet massa venenatis, ut convallis justo ultricies.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="heading-3">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapse-3"
-                    aria-expanded="false"
-                    aria-controls="collapse-3"
-                  >
-                    <span class="badge">3</span> How will digital currency
-                    affect daily life in the US and around the world?
-                  </button>
-                </h2>
-                <div
-                  id="collapse-3"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="heading-3"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <p>
-                      Donec tempus sodales dolor, at efficitur enim posuere
-                      auctor. Nam et nisi eu purus tempor faucibus aliquet vitae
-                      orci. Curabitur sollicitudin leo et magna pharetra
-                      efficitur. Nullam et scelerisque lectus. Orci varius
-                      natoque penatibus et magnis dis parturient montes,
-                      nascetur ridiculus mus. Quisque faucibus sit amet odio
-                      eget scelerisque. Mauris dictum cursus ornare.
-                    </p>
-                    <p>
-                      Ut vehicula blandit tellus. Sed sit amet bibendum leo, non
-                      sagittis neque. Nam fringilla fermentum tortor, ac gravida
-                      velit facilisis id. Donec congue ullamcorper velit, at
-                      malesuada arcu faucibus pretium. Donec rhoncus magna sit
-                      amet massa venenatis, ut convallis justo ultricies.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="heading-4">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapse-4"
-                    aria-expanded="false"
-                    aria-controls="collapse-4"
-                  >
-                    <span class="badge">4</span> Why should I use ARD currency
-                    and how is it different from other currencies?
-                  </button>
-                </h2>
-                <div
-                  id="collapse-4"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="heading-4"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <p>
-                      Donec tempus sodales dolor, at efficitur enim posuere
-                      auctor. Nam et nisi eu purus tempor faucibus aliquet vitae
-                      orci. Curabitur sollicitudin leo et magna pharetra
-                      efficitur. Nullam et scelerisque lectus. Orci varius
-                      natoque penatibus et magnis dis parturient montes,
-                      nascetur ridiculus mus. Quisque faucibus sit amet odio
-                      eget scelerisque. Mauris dictum cursus ornare.
-                    </p>
-                    <p>
-                      Ut vehicula blandit tellus. Sed sit amet bibendum leo, non
-                      sagittis neque. Nam fringilla fermentum tortor, ac gravida
-                      velit facilisis id. Donec congue ullamcorper velit, at
-                      malesuada arcu faucibus pretium. Donec rhoncus magna sit
-                      amet massa venenatis, ut convallis justo ultricies.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="heading-5">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapse-5"
-                    aria-expanded="false"
-                    aria-controls="collapse-5"
-                  >
-                    <span class="badge">5</span> How is ARD and Arda helping
-                    entrepreneurs?
-                  </button>
-                </h2>
-                <div
-                  id="collapse-5"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="heading-5"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <p>
-                      Donec tempus sodales dolor, at efficitur enim posuere
-                      auctor. Nam et nisi eu purus tempor faucibus aliquet vitae
-                      orci. Curabitur sollicitudin leo et magna pharetra
-                      efficitur. Nullam et scelerisque lectus. Orci varius
-                      natoque penatibus et magnis dis parturient montes,
-                      nascetur ridiculus mus. Quisque faucibus sit amet odio
-                      eget scelerisque. Mauris dictum cursus ornare.
-                    </p>
-                    <p>
-                      Ut vehicula blandit tellus. Sed sit amet bibendum leo, non
-                      sagittis neque. Nam fringilla fermentum tortor, ac gravida
-                      velit facilisis id. Donec congue ullamcorper velit, at
-                      malesuada arcu faucibus pretium. Donec rhoncus magna sit
-                      amet massa venenatis, ut convallis justo ultricies.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="heading-6">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapse-6"
-                    aria-expanded="false"
-                    aria-controls="collapse-6"
-                  >
-                    <span class="badge">6</span> What benefits can I get from
-                    joining the ARD crowd funding platform?
-                  </button>
-                </h2>
-                <div
-                  id="collapse-6"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="heading-6"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <p>
-                      Donec tempus sodales dolor, at efficitur enim posuere
-                      auctor. Nam et nisi eu purus tempor faucibus aliquet vitae
-                      orci. Curabitur sollicitudin leo et magna pharetra
-                      efficitur. Nullam et scelerisque lectus. Orci varius
-                      natoque penatibus et magnis dis parturient montes,
-                      nascetur ridiculus mus. Quisque faucibus sit amet odio
-                      eget scelerisque. Mauris dictum cursus ornare.
-                    </p>
-                    <p>
-                      Ut vehicula blandit tellus. Sed sit amet bibendum leo, non
-                      sagittis neque. Nam fringilla fermentum tortor, ac gravida
-                      velit facilisis id. Donec congue ullamcorper velit, at
-                      malesuada arcu faucibus pretium. Donec rhoncus magna sit
-                      amet massa venenatis, ut convallis justo ultricies.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="heading-7">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapse-7"
-                    aria-expanded="false"
-                    aria-controls="collapse-7"
-                  >
-                    <span class="badge">7</span> How do I convert my ARD
-                    currency into US dollars or other currencies?
-                  </button>
-                </h2>
-                <div
-                  id="collapse-7"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="heading-7"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <p>
-                      Donec tempus sodales dolor, at efficitur enim posuere
-                      auctor. Nam et nisi eu purus tempor faucibus aliquet vitae
-                      orci. Curabitur sollicitudin leo et magna pharetra
-                      efficitur. Nullam et scelerisque lectus. Orci varius
-                      natoque penatibus et magnis dis parturient montes,
-                      nascetur ridiculus mus. Quisque faucibus sit amet odio
-                      eget scelerisque. Mauris dictum cursus ornare.
-                    </p>
-                    <p>
-                      Ut vehicula blandit tellus. Sed sit amet bibendum leo, non
-                      sagittis neque. Nam fringilla fermentum tortor, ac gravida
-                      velit facilisis id. Donec congue ullamcorper velit, at
-                      malesuada arcu faucibus pretium. Donec rhoncus magna sit
-                      amet massa venenatis, ut convallis justo ultricies.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
     <!-- ***** FAQ End ***** -->
 
     <!-- ***** Contact & Footer Start ***** -->
