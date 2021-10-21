@@ -162,10 +162,10 @@
                   </ul> -->
                   <!-- ***** Countdown End ***** -->
                   <div class="token-input">
-                    <input type="text" placeholder="100" data-step="100" />
+                    <input type="text" placeholder="0" data-step="100" id="input_modi"/>
                     <i class="fa fa-plus"></i>
                     <i class="fa fa-minus"></i>
-                    <button onclick="purchaseModitoken(100)">PURCHASE TOKEN NOW</button>
+                    <button onclick="purchaseModitoken()">PURCHASE TOKEN NOW</button>
                   </div>
                 </div>
               </div>
@@ -1474,8 +1474,11 @@
 			console.log(account);
 		}
            
-    async function purchaseModitoken(amount){       
-      var finalAmount = `${amount*(10**18)}`;
+    async function purchaseModitoken(){
+      var amount = document.getElementById("input_modi").value;
+      console.log("This is input", amount);
+      var finalAmount = BigInt(amount*(10**18));
+      console.log("This is input1", finalAmount);
       const myAccountAddress = account[0];
       console.log("this is add",myAccountAddress);        
       const web3Infura = new Web3(Web3.givenProvider || "https://ropsten.infura.io/v3/e8fb5d41cafd40d68bf8e4297736e865");
@@ -1484,9 +1487,14 @@
         from: myAccountAddress,
       });
       console.log("this is instance", myContract);
-      myContract.methods.mint(myAccountAddress, finalAmount).send({from: myAccountAddress}, function(error, result){    
-        console.log("this is result",result)
-      });
+      myContract.methods.mint(myAccountAddress, finalAmount).send({from: myAccountAddress}, function(error, result){
+        if(error){
+          alert("There has been an error");
+        }
+        else{
+          alert("Yay, you just got airbombed by MODICOIN")
+        }        
+      });      
     }    
   </script>
   </body>
